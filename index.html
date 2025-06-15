@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#skills">スキル</a></li>
+            <li><a href="#hobbies">趣味・特技</a></li>
+            <li><a href="#history">経歴</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="profile" class="profile">
+    <div class="container">
+      <h1>私の自己紹介</h1>
+      <div class="profile-content">
+        <div class="profile-image">
+        <img src="./prof-img/profile.png" alt="プロフィール画像" />
+        </div>
+        <div class="profile-text">
+        <h2>Megumi Izukura</h2>
+          <p class="profile-title">ウエブ開発者</p>
+          <p class="profile-description">東京都生まれ。結婚してから拠点は北海道<br>夫・娘・猫と慎ましく暮らす<br>エンジニアとして武者修行中<br>世界を舞台に日々精進<br>あせらず、無理せず、なんだかんだで前へ前へ</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">スキル</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="skill-name">HTML/CSS</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">React</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">UI/UXデザイン</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+    <div class="container">
+      <h2 class="section-title">趣味・特技</h2>
+       <div class="hobbies-container">
+        <div class="hobby-item">
+         <div class="hobby-icon"></div>
+         <h3>読書</h3>
+         <p>レシピ本やファッション雑誌は読書といえるのでしょうか</p>
+        </div>
+        <div class="hobby-item">
+         <div class="hobby-icon"></div>
+         <h3>ウォーキング</h3>
+         <p>健康のためには毎日短時間でも運動が必要です</p>
+        </div>
+        <div class="hobby-item">
+         <div class="hobby-icon"></div>
+         <h3>ドラマ・映画鑑賞</h3>
+         <p>勉強のため自粛中です<i class="fas fa-tv"></i>解禁したら一気見します</p>
+        </div>
+       </div>
+    </div>
+    </section>
+
+    <section id="history" class="history">
+      <div class="container">
+        <h2 class="section-title">経歴</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2019年 -  現在</div>
+            <div class="timeline-content">
+              <h3>株式会社GOGO商店</h3>
+              <p>経理事務を経て、営業事務に従事中</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2010年 - 2018年</div>
+            <div class="timeline-content">
+              <h3>BAAANK銀行</h3>
+              <p>融資部配属</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2005年 - 2009年</div>
+            <div class="timeline-content">
+              <h3>London留学</h3>
+              <div class="p-wrapper">
+              <p>ロンドン</p><p class="p-highlight">にあるかもしれない</p><p>大学にて国際関係学を学ぶ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        
+        <h2 class="section-title">お問い合わせ</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">メッセージ</label>
+            <textarea type="message" id="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">送信する</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p> 2025 Megumi Izu  All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
